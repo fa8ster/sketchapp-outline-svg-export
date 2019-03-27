@@ -1,0 +1,18 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "my-command",
+      "identifier": "sketchapp-outline-svg-export.my-command-identifier",
+      "script": "./my-command.js"
+    }
+  ],
+  "menu": {
+    "title": "sketchapp-outline-svg-export",
+    "items": [
+      "sketchapp-outline-svg-export.my-command-identifier"
+    ]
+  }
+}
