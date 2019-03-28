@@ -1,0 +1,8 @@
+{
+  "name": "svgo-export-assets",
+  "dependencies": {
+    "svgo": "^1.2",
+    "svg-outline-stroke": "^1.2.3",
+    "text-to-svg": "^3.1.5"
+  }
+}

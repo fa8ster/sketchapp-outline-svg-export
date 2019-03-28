@@ -1,18 +1,28 @@
 {
+  "identifier": "com.fabbblyn.sketchapp-outline-svg-export",
   "compatibleVersion": 3,
   "bundleVersion": 1,
   "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
-      "identifier": "sketchapp-outline-svg-export.my-command-identifier",
-      "script": "./my-command.js"
+      "name": "SVGO Export",
+      "identifier": "com.fabbblyn.sketchapp-outline-svg-export.svgo-export",
+      "script": "./svgo-export.js",
+      "handlers": {
+        "actions": {
+          "ExportSlices": "onExportSlices"
+        }
+      }
+    },
+    {
+      "name": "Export to SVG with all Text Layers outlined",
+      "identifier": "com.fabbblyn.sketchapp-outline-svg-export.convert-all-to-outlines",
+      "script": "./convert-all-to-outlines.js",
+      "shortcut" : "command alt ctrl o"
     }
   ],
   "menu": {
-    "title": "sketchapp-outline-svg-export",
-    "items": [
-      "sketchapp-outline-svg-export.my-command-identifier"
-    ]
+      "isRoot": true,
+      "items": ["com.fabbblyn.sketchapp-outline-svg-export.convert-all-to-outlines"]
   }
 }
